@@ -44,7 +44,7 @@ public class FakeStoreCategoryService implements CategoryService {
                 throw new CategoryNotFoundException("No products found for category " + category);
             }
         } catch (Exception e) {
-            throw new NoSuchElementException("Error fetching products for category " + category, e);
+            throw new NoSuchElementException();
         }
 
         return new FakeStoreProductDTO().getListOfProducts(fakeStoreListOfProducts);
