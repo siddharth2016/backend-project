@@ -16,7 +16,7 @@ public class StripePaymentGatewayImplementation implements PaymentService{
         // 1. Create PriceCreateParam Object
         //
 
-        Stripe.apiKey = "sk_test_tR3PYbcVNZZ796tH88S4VQ2u";
+        Stripe.apiKey = "";
 
         PriceCreateParams params =
                 PriceCreateParams.builder()
@@ -30,7 +30,7 @@ public class StripePaymentGatewayImplementation implements PaymentService{
         Price price = Price.create(params);
 
         //2. Creating Payment Link
-        Stripe.apiKey = "sk_test_51R4LP0GdlDvgnUKHZ68zilHWkZxwMrj27XOF82jvNRrjEtC7hdBMha2I0a13YkcVcmZEEVcnKdlwlmKepnnKf3fg00eZjeTCHy";
+        Stripe.apiKey = "";
 
         PaymentLinkCreateParams linkParams =
                 PaymentLinkCreateParams.builder()
